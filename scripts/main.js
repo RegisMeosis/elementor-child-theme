@@ -23,17 +23,17 @@ $(document).ready(function () {
         SCROLL AUTO JUSQU'AU CONTENU
     ***************************************/
 
-    const scrollToContent = (margin) => {
-        const offsetTop = document.querySelector("#main").offsetTop;
-        scroll({
-            top: offsetTop + margin,
-            behavior: "smooth",
-        });
-    };
+    // const scrollToContent = (margin) => {
+    //     const offsetTop = document.querySelector("#main").offsetTop;
+    //     scroll({
+    //         top: offsetTop + margin,
+    //         behavior: "smooth",
+    //     });
+    // };
 
-    if (!document.body.classList.contains("home") && window.innerWidth > 767) {
-        scrollToContent(0);
-    }
+    // if (!document.body.classList.contains("home") && window.innerWidth > 767) {
+    //     scrollToContent(0);
+    // }
 
     /***************************************
     INIT GSAP
