@@ -4,7 +4,7 @@
     AJOUT DE L'EXTRAIT DANS LES PAGES
 ******************************************************************************/
 
-add_post_type_support( 'page', 'excerpt' ).
+add_post_type_support('page','excerpt');
 
 /******************************************************************************
     CHILDREN PAGES QUERY ELEMENTOR : query ID -> child_pages
