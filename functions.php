@@ -19,4 +19,4 @@ add_shortcode('elfsight_shortcode', 'elfsight');
     MEO CONFIG -- NE PAS SUPPRIMER --
 ******************************************************************************/
 require_once(get_stylesheet_directory() .'/meo-config/meo-functions.php');
-require_once(get_stylesheet_directory() .'/meo-config/meo-avis.php');
+// require_once(get_stylesheet_directory() .'/meo-config/meo-avis.php');
