@@ -114,21 +114,26 @@ $(document).ready(function () {
         ANIMATIONS GSAP LETTRE PAR LETTRE
     ***************************************/
 
-    // $(".anim-title .elementor-heading-title").each(function (index) {
-    //     var characters = $(this).text().split("");
-
-    //     $this = $(this);
-    //     $this.empty();
-    //     $.each(characters, function (i, el) {
-    //         $this.append("<span>" + el + "</span");
-    //     });
+    // const textsToSplit = Array.from(
+    //     document.querySelectorAll(".animate-text .elementor-heading-title")
+    // );
+    // textsToSplit.forEach((textToSplit) => {
+    //     const spans = textToSplit.innerText
+    //         .split("")
+    //         .map((letter) => `<span>${letter}</span>`)
+    //         .join("");
+    //     textToSplit.innerText = "";
+    //     textToSplit.innerHTML = spans;
     // });
 
-    // gsap.set(".anim-title .elementor-heading-title span", {
+    // gsap.set(".animate-text .elementor-heading-title", {
+    //     opacity: 1,
+    // });
+    // gsap.set(".animate-text .elementor-heading-title span", {
     //     opacity: 0,
     // });
 
-    // ScrollTrigger.batch(".anim-title .elementor-heading-title span", {
+    // ScrollTrigger.batch(".animate-text .elementor-heading-title span", {
     //     once: true,
     //     interval: 0,
     //     onEnter: (elements) => {

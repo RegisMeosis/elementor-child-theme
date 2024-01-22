@@ -2,30 +2,36 @@
     GLOBALS
 ***********************/
 body {
-  --primary: var(--e-global-color-primary);
-  --secondary: var(--e-global-color-secondary);
-  --text-color: var(--e-global-color-text);
-  --accent-color: var(--e-global-color-accent);
-  --text-font: var(--e-global-typography-primary-font-family);
-  --title-font: var(--e-global-typography-secondary-font-family);
-  --cookies-text-color: var(--secondary);
+    --primary: var(--e-global-color-primary);
+    --secondary: var(--e-global-color-secondary);
+    --text-color: var(--e-global-color-text);
+    --accent-color: var(--e-global-color-accent);
+    --text-font: var(--e-global-typography-primary-font-family);
+    --title-font: var(--e-global-typography-secondary-font-family);
+    --accent-font: var(--e-global-typography-accent-font-family);
+    --cookies-text-color: white;
+    text-wrap: balance;
+    overflow-x: clip;
+}
+.animate-text .elementor-heading-title {
+    opacity: 0;
 }
 .elementor-button-link,
 .elementor-button {
-  font-family: var(--e-global-typography-primary-font-family) !important;
-  font-weight: 500 !important;
+    font-family: var(--accent-font) !important;
+    font-weight: 500;
 }
 h1,
 .title-xl .elementor-heading-title {
-  font-family: var(--title-font);
-  font-size: clamp(35px, 10px + 3vw, 57px);
-  line-height: 1.1;
+    font-family: var(--title-font);
+    font-size: clamp(35px, 10px + 3vw, 57px);
+    line-height: 1.1;
 }
 .title-lg .elementor-heading-title {
-  font-family: var(--title-font);
-  font-size: 31px;
-  line-height: 1.5;
-  /* @media screen and (max-width: 1024px) {
+    font-family: var(--title-font);
+    font-size: 31px;
+    line-height: 1.5;
+    /* @media screen and (max-width: 1024px) {
         font-size: 28px;
     }
     @media screen and (max-width: 767px) {
@@ -34,35 +40,35 @@ h1,
 }
 
 .subtitle .elementor-heading-title {
-  font-family: var(--text-font);
-  font-size: 14px;
-  line-height: 1.2;
-  color: var(--secondary);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 400;
+    font-family: var(--text-font);
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 .elementor-widget-text-editor p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 .elementor-widget-text-editor li:last-child {
-  margin-bottom: 0.7rem;
+    margin-bottom: 0.7rem;
 }
 .elementor-post__read-more {
-  font-weight: 600 !important;
+    font-weight: 600 !important;
 }
 
 /* Commentaires */
 #comments .title-comments {
-  display: none;
+    display: none;
 }
 .commentrating .fa {
-  font-size: 16px;
-  margin: 0 5px;
-  color: #ffcc00;
+    font-size: 16px;
+    margin: 0 5px;
+    color: #ffcc00;
 }
 .comment-form-url {
-  display: none;
+    display: none;
 }
 
 /***********************
@@ -119,22 +125,22 @@ h1,
 ***********************/
 tr,
 td {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 .horaires tr,
 .horaires td {
-  padding: 0 !important;
-  border: none !important;
-  line-height: 2.2;
+    padding: 0 !important;
+    border: none !important;
+    line-height: 2.2;
 }
 .horaires-line {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 @media screen and (min-width: 1024px) {
-  .horaires-hour {
-    justify-self: end;
-  }
+    .horaires-hour {
+        justify-self: end;
+    }
 }
 /***********************
     HOME NEWSLETTER
@@ -175,53 +181,53 @@ td {
     SITEMAP
 ***********************/
 .wsp-container h2 {
-  margin-top: 20px;
-  /* color: var(--secondary); */
+    margin-top: 20px;
+    /* color: var(--secondary); */
 }
 
 .wsp-container li a,
 .wsp-container strong {
-  font-size: 1rem;
-  /* color: var(--primary); */
-  padding-left: 10px;
+    font-size: 1rem;
+    /* color: var(--primary); */
+    padding-left: 10px;
 }
 .wsp-container li a:hover {
-  /* color: var(--secondary); */
+    /* color: var(--secondary); */
 }
 
 .wsp-container li::marker {
-  color: var(--primary);
-  font-family: "Font Awesome 5 Free";
-  content: "\f15c";
-  font-weight: 900;
+    color: var(--primary);
+    font-family: "Font Awesome 5 Free";
+    content: "\f15c";
+    font-weight: 900;
 }
 
 /***********************
     COOKIES BAR
 ***********************/
 #cookie-notice .cookie-notice-container {
-  background-color: var(--primary);
-  font-family: var(--text-font);
-  color: var(--cookies-text-color);
+    background-color: var(--primary);
+    font-family: var(--text-font);
+    color: var(--cookies-text-color);
 }
 #cookie-notice .cookie-notice-container .cn-button {
-  background-color: transparent !important;
-  border: 1px solid var(--cookies-text-color) !important;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--text-font) !important;
+    background-color: transparent !important;
+    border: 1px solid var(--cookies-text-color) !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text-font) !important;
 }
 #cookie-notice .cookie-notice-container .cn-button:hover {
-  background-color: black !important;
-  color: inherit;
+    background-color: black !important;
+    color: inherit;
 }
 #cookie-notice .cookie-notice-container a {
-  color: inherit;
-  font-weight: bold;
+    color: inherit;
+    font-weight: bold;
 }
 #cookie-notice .cookie-notice-container a:hover {
-  color: black;
+    color: black;
 }
 
 /***********************
@@ -229,28 +235,28 @@ td {
 ***********************/
 
 html.lenis {
-  height: auto;
+    height: auto;
 }
 
 .lenis.lenis-smooth {
-  scroll-behavior: auto;
+    scroll-behavior: auto;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
+    overscroll-behavior: contain;
 }
 
 .lenis.lenis-stopped {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .lenis.lenis-scrolling iframe {
-  pointer-events: none;
+    pointer-events: none;
 }
 @media screen and (max-width: 767px) {
-  /*Corrige les avis Google qui ne vont pas à la ligne*/
-  .es-grid-layout {
-    display: flex !important;
-    flex-direction: column !important;
-  }
+    /*Corrige les avis Google qui ne vont pas à la ligne*/
+    .es-grid-layout {
+        display: flex !important;
+        flex-direction: column !important;
+    }
 }
