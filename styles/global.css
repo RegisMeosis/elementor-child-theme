@@ -13,7 +13,7 @@ body {
     text-wrap: balance;
     overflow-x: clip;
 }
-.animate-text .elementor-heading-title {
+body:not(.elementor-editor-active) .animate-text .elementor-heading-title {
     opacity: 0;
 }
 .elementor-button-link,
