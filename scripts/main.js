@@ -36,6 +36,22 @@ $(document).ready(function () {
     // }
 
     /***************************************
+        SCROLL DEPUIS UN BOUTON
+    ***************************************/
+    // const scrollToContent = (margin) => {
+    //     const offsetTop = document.querySelector("#header").offsetTop;
+    //     scroll({
+    //         top: offsetTop + margin,
+    //         behavior: "smooth",
+    //     });
+    // };
+
+    // const scrollElement = document.getElementById("scroll");
+    // scrollElement.addEventListener("click", () => {
+    //     scrollToContent(0);
+    // });
+
+    /***************************************
     INIT GSAP
     ***************************************/
 
