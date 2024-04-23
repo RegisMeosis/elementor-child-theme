@@ -121,6 +121,22 @@ if( !function_exists( 'delete_meosis_menu_items' ) ){
 
 
 /******************************************************************************
+    AJOUT DU MENU D'INFORMATIONS
+******************************************************************************/
+
+if( function_exists('acf_add_options_page') ) {
+    add_meosis_post_type(array(
+        'page_title'    => 'Informations',
+        'menu_title'    => 'Informations',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false,
+        'icon_url'      => 'dashicons-admin-users',
+        'position'      => 2
+    ));
+}
+
+/******************************************************************************
     AJOUT DU .HTML DANS LES PERMALIENS POUR OPIMISER LE SEO
 ******************************************************************************/
 add_action('init', 'html_page_permalink', -1);
