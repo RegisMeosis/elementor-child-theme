@@ -7,7 +7,7 @@ $(document).ready(function () {
   //     const headerHeight = document.querySelector(
   //       ".elementor-location-header"
   //     ).offsetHeight;
-  //     const hero = [...document.querySelectorAll("#hero .swiper-slide")];
+  //     const hero = [...document.querySelectorAll("#hero .elementor-container")];
   //     if (hero.length) {
   //       hero.forEach((item) => {
   //         if (window.innerWidth > 1024) {
